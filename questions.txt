@@ -1,0 +1,85 @@
+What is a smart pointer?
+When should we use one of them? std::unique_ptr, std::shared_ptr, std::weak_ptr
+
+Why we should use std::make_shared and std::make_unique instead of new?
+How do you pass std::shared_ptr as an argument to a function?
+
+What are the differences between a pointer and a reference?
+when should we use regular pointers then?
+
+Why shared_ptr gets custom deleter without it's type being changed?
+
+How do you use reference as a member variable? (without losing assignment)
+What is the purpose of the std::reference_wrapper<T>?
+    -Gives reference semantics to objects passed as value parameter
+    -When using an std::reference_wrapper<T> with std::make_tuple() the corresponding tuple element becomes a T&
+    -You can use them in containers
+
+
+Data Structures:
+vector, deque, set, map, unordered_set, unordered_map, list
+What is the difference between unordered_set and set?
+* Usage of std::string_view and std::span?
+* Cache efficiency of containers, 100 element vector vs set
+* Custom allocators
+* Did you implement any data structure?
+* Why should 'move constructor' generally be noexcept?
+
+Special Member Functions:
+What is rule of 0/3/5 ?
+What happen when we move objects? What happen to POD types?
+Whtat is a move-only type? What sort of types are move-only?
+How do you pass variables to ctor?
+* Value semantic and Reference semantic
+
+
+Network and socket programing:
+0MQ
+
+Asynchronous programing:
+Asio or some thing like that.
+
+
+MultiThreading:
+Difference between Mutex and Semaphore?
+Condition variable?
+What is std::atomic and How it works?
+What is cost of using an atomic?
+did you use a thread pool?
+Thread Safe data-structures like MPMC Queues.
+
+
+Polymorphism:
+What is a virtual function ?
+What is the 'override' and 'final' keyword used for?
+When should we use virtual destructors?
+
+
+Modern c++:
+auto, lambda, range_based for loop, variant, any, optional
+What is usage if auto&& in for range based loops
+
+Template Programing:
+std::forward, type-trits, CRTP, CTAD, Variadic Template
+
+
+MISC:
+RVO
+* std::function
+* Type erusure
+* Usage of auto&&?
+Usage of std::tuple
+* When do you use new delete
+* What is memory aligment?
+
+
+Sofware Enginering:
+Do you use unit-test?
+How do you make your code testable?
+What is Dependency Injection?
+What is mock objects?
+Continious Integeration
+How to loose coupling between parts of a project?
+
+Tools:
+cppcheck, valgrind, callgrinf, clang-tidy, clang-format
